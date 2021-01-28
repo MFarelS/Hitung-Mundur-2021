@@ -1,52 +1,757 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Bay Parel Ok?">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="MFarelS">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>HITUNG MUNDUR 2021 | BY MFARELS</title>
-</head>
-<body>
-    <div class="container">
-        <div class="imgBx"></div>
-        <div class="countdownBx">
-            <h2>HITUNG MUNDUR<br><span><i>2021</i></span></h2>
-            <div class="countdown">
-                <div id="day">00</div>
-                <div id="hour">00</div>
-                <div id="minute">00</div>
-                <div id="second">00</div>
-            </div>
+<html lang="en" translate="id"><script async="" src="https://count-server.sharethis.com/v2.0/get_counts?cb=window.__sharethis__.cb3&amp;url=https%3A%2F%2Fapi.imjustgood.com%2Fapidoc.html"></script><script async="" src="https://buttons-config.sharethis.com/js/5fe1e9426676b000125fc781.js"></script><script src="blob:https://api.imjustgood.com/8c8f40a4-9b9a-4ce3-acf4-fd68d6cf177e"></script><head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="Easy multimedia API for script and coding by Imjustgood.com">
+  <meta name="author" content="ImJustGood">
+  <meta property="og:site_name" content="API IMJUSTGOOD">
+  <meta property="og:site" content="https://api.imjustgood.com">
+  <meta property="og:title" content="API.IMJUSTGOOD.COM">
+  <meta property="og:description" content="Easy multimedia API for script and coding by Imjustgood.com."> 
+  <meta property="og:image" content="https://imagizer.imageshack.com/img924/4722/l8mVnd.png"> 
+  <meta property="og:url" content="https://api.imjustgood.com"> <!-- where do you want your post to link to -->
+  <meta property="og:type" content="article">
+  <!-- Favicon Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="https://api.imjustgood.com/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://api.imjustgood.com/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://api.imjustgood.com/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://api.imjustgood.com/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://api.imjustgood.com/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://api.imjustgood.com/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://api.imjustgood.com/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://api.imjustgood.com/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://api.imjustgood.com/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://api.imjustgood.com/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://api.imjustgood.com/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://api.imjustgood.com/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://api.imjustgood.com/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://api.imjustgood.com/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="https://api.imjustgood.com/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">     
+  <title>Api Documentation</title>
+  <!-- Vendor CSS Files -->
+  <link href="https://api.imjustgood.com/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://api.imjustgood.com/assets/vendor/icofont/A.icofont.min.css.pagespeed.cf.Vfk_Jh7Ldv.css" rel="stylesheet">
+  <link href="https://api.imjustgood.com/assets/vendor/owl.carousel/assets/A.owl.carousel.min.css.pagespeed.cf.F39IA4HvTK.css" rel="stylesheet">
+  <link href="https://api.imjustgood.com/assets/vendor/boxicons/css/A.boxicons.min.css.pagespeed.cf.6JrePWJRWi.css" rel="stylesheet">
+  <link href="https://api.imjustgood.com/assets/vendor/venobox/A.venobox.css.pagespeed.cf.kq0U_MbBme.css" rel="stylesheet">
+  <link href="https://api.imjustgood.com/assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="https://api.imjustgood.com/assets/css/A.style.css.pagespeed.cf.we4RgbaZD3.css">
+  <link rel="stylesheet" href="https://api.imjustgood.com/assets/css/A.prism.css.pagespeed.cf.vnA2L8quMo.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://api.imjustgood.com/cloudme.fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+  <link rel="stylesheet" href="https://api.imjustgood.com/cloudme.fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
+  <style>}
+    .show-grid {margin-bottom:15px}.card2-header{padding:.75rem 1.25rem;margin-bottom:0;background:linear-gradient(90deg,rgba(255,238,117,1) 0%,rgba(11,255,220,1) 40%,rgba(230,249,99,1) 100%);border-bottom:1px solid rgba(0,0,0,.125)}.Xcard-header{background-color:#fff}.show-grid [class^="col-"]{padding-top:1px;padding-bottom:1px;padding-right:1px;padding-left:1px;background-color:#fff;background-color: rgba(0,0,0,.125)
+      border: 1px solid #ddd;border:1px solid #e6e6e6}</style>
+<style type="text/css">.video-ads{display:none!important}#player-ads{display:none!important}#watch7-sidebar-ads{display:none!important}#AdSense{display:none!important}#homepage-sidebar-ads{display:none!important}#page-container>#page>#header{display:none!important}#content #page-manager #masthead-ad{display:none!important}#body-container #page-container #video-masthead-iframe{display:none!important}#feedmodule-PRO{display:none!important}#homepage-chrome-side-promo{display:none!important}#search-pva{display:none!important}#watch-branded-actions{display:none!important}#watch-buy-urls{display:none!important}.carousel-offer-url-container{display:none!important}.promoted-videos{display:none!important}.watch-extra-info-column{display:none!important}.watch-extra-info-right{display:none!important}a[href^="http://www.youtube.com/cthru?"]{display:none!important}</style><style type="text/css">#st-2 {
+  font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  backface-visibility: hidden;
+  display: block;
+  position: fixed;
+  opacity: 1;
+  text-align: left;
+  top: 160px;
+  z-index: 94034;
+}
+#st-2.st-right {
+  right: 0px;
+}
+#st-2.st-hidden.st-right {
+  right: -48px;
+}
+#st-2.st-hidden {
+  width: 96px;
+}
+#st-2 > div {
+  clear: right;
+  float: right;
+}
+#st-2 .st-btn {
+  -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: NaNpx;
+  height: 48px;
+  line-height: 24px;
+  margin-bottom: 0;
+  opacity: 1;
+  overflow: hidden;
+  padding: 12px;
+  position: relative;
+  text-align: left;
+  top: 0;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 48px;
+}
+#st-2 .st-btn.st-first {
+  border-top: none;
+  border-top-left-radius: 9px;
+}
+#st-2 .st-btn.st-last {
+  border-bottom: none;
+  border-bottom-left-radius: 9px;
+}
+#st-2 .st-btn > svg {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  height: 24px;
+  margin-left: 0;
+  vertical-align: top;
+  width: 24px;
+}
+#st-2 .st-btn > img {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  height: 24px;
+  margin-left: 0;
+  vertical-align: top;
+  width: 24px;
+}
+#st-2 .st-btn > span {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  left: -35px;
+  letter-spacing: 0.5px;
+  opacity: 0;
+  padding: 0 6px;
+  position: relative;
+  vertical-align: top;
+  filter: alpha(opacity=0);
+}
+#st-2 .st-btn.st-hide-label > span {
+  display: none !important;
+}
+#st-2 .st-total {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  background: #fff;
+  color: #555;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 18px;
+  margin-right: 0;
+  min-height: 34px;
+  max-width: 80px;
+  opacity: 1;
+  padding: 4px 0;
+  text-align: center;
+  width: 48px;
+}
+#st-2 .st-total.st-hidden {
+  display: none;
+}
+#st-2 .st-total > span {
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 0;
+}
+#st-2 .st-total > span.st-shares {
+  font-size: 11px;
+  line-height: 11px;
+}
+#st-2 .st-toggle {
+  right: -48px;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  background: #ccc;
+  border-bottom-left-radius: 9px;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 24px;
+  position: relative;
+  text-align: center;
+  width: 48px;
+}
+#st-2.st-hidden .st-toggle {
+  border-top-left-radius: 9px;
+}
+#st-2.st-right .st-toggle .st-right {
+  display: inline-block;
+}
+#st-2.st-right.st-hidden .st-toggle .st-right {
+  display: none;
+}
+#st-2.st-right .st-toggle .st-left {
+  display: none;
+}
+#st-2.st-right.st-hidden .st-toggle .st-left {
+  display: inline-block;
+}#st-2:hover .st-toggle {
+  right: 0;
+}
+#st-2.st-hidden:hover .st-toggle {
+  right: 48px;
+}
+#st-2.st-toggleable:hover .st-btn.st-last {
+  border-bottom-left-radius: 0;
+}
+#st-2.st-toggleable:hover .st-btn.st-last:hover {
+  border-bottom-left-radius: 9px;
+}
+#st-2 .st-btn:hover {
+  border-bottom-left-radius: 9px;
+  border-top-left-radius: 9px;
+}
+#st-2.st-has-labels .st-btn:hover {
+  width: 120px;
+}
+#st-2:not(.st-has-labels) .st-btn:hover {
+  width: 62px;
+}
+#st-2 .st-btn.st-hide-label:hover {
+  width: 62px;
+}
+#st-2 .st-btn:hover > svg {
+  margin-left: 5px;
+}
+#st-2 .st-btn:hover > img {
+  margin-left: 5px;
+}
+#st-2 .st-btn:hover > span {
+  opacity: 1;
+  display: inline-block;
+  left: 0;
+  filter: alpha(opacity=100);
+}
+@media (max-width: 1024px) {
+  #st-2 .st-btn:hover > svg {
+    margin-left: 0;
+  }
+  #st-2 .st-btn:hover > span {
+    display: none;
+  }
+}@media (max-width: 1024px) {
+  #st-2 {
+  bottom: 0;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: auto;
+  width: 100%;
+}
+#st-2.st-hidden {
+  bottom: -48px;
+  width: 100%;
+}
+#st-2.st-hidden.st-left {
+  left: 0;
+}
+#st-2.st-hidden.st-right {
+  right: 0;
+}
+#st-2 > div {
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  clear: none;
+  flex: 1;
+  float: none;
+}
+#st-2 .st-total {
+  background: #fff;
+  padding: 6px 8px;
+}
+#st-2 .st-btn {
+  -moz-border-radius: 0 !important;
+-webkit-border-radius: 0 !important;
+border-radius: 0 !important;
+  text-align: center;
+  width: auto;
+}
+#st-2 .st-btn > span {
+  display: none;
+}
+#st-2 .st-toggle {
+  display: none;
+}body { padding-bottom: 48px; }
+}#st-2 .st-btn[data-network='sharethis'] {
+  background-color: #95D03A;
+}
+#st-2 .st-btn[data-network='sharethis'] svg {
+  fill: #fff;
+}
+#st-2 .st-btn[data-network='sharethis'] > span {
+  color: #fff;
+}
+#st-2 .st-btn[data-network='whatsapp'] {
+  background-color: #25d366;
+}
+#st-2 .st-btn[data-network='whatsapp'] svg {
+  fill: #fff;
+}
+#st-2 .st-btn[data-network='whatsapp'] > span {
+  color: #fff;
+}
+#st-2 .st-btn[data-network='line'] {
+  background-color: #00c300;
+}
+#st-2 .st-btn[data-network='line'] svg {
+  fill: #fff;
+}
+#st-2 .st-btn[data-network='line'] > span {
+  color: #fff;
+}
+#st-2 .st-btn[data-network='twitter'] {
+  background-color: #55acee;
+}
+#st-2 .st-btn[data-network='twitter'] svg {
+  fill: #fff;
+}
+#st-2 .st-btn[data-network='twitter'] > span {
+  color: #fff;
+}
+#st-2 .st-btn[data-network='facebook'] {
+  background-color: #4267B2;
+}
+#st-2 .st-btn[data-network='facebook'] svg {
+  fill: #fff;
+}
+#st-2 .st-btn[data-network='facebook'] > span {
+  color: #fff;
+}</style></head>
+
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+  <!-- Start Header -->
+  <header id="header" class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">API.IMJUSTGOOD.COM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="apidoc.html" style="color: #34b7a7;">API</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="intro.html">RATE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.imjustgood.com/">SERVICE</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End Header -->
+
+  <!-- Start Main -->
+  <main id="main">
+
+    <!-- Start List Api -->
+    <section id="about" class="about">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <h6 style="margin-bottom: 35px; font-weight: bold;">Request And Response Example</h6>
+        <div class="container">
+          <div class="row show-grid">
+            <div class="col-lg-12">
+              <div class="accordion md-accordion" id="accordionGood" role="tablist" aria-multiselectable="true">
+
+                  <!-- Start Card Header -->
+                  <div class="card-header" role="tab" id="heading1">
+                    <a class="" data-toggle="collapse" data-parent="#accordionGood" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                      <h7 class="mb-0">
+                        1.
+                        <span style="padding-left: 10px; padding-right: 10px;">
+                          Apikey Status
+                        </span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </h7>
+                    </a>
+                  </div>
+                  <!-- End Card Header -->
+
+                  <!-- Start Card Body -->
+                  <div id="collapse1" class="collapse show in" role="tabpanel" aria-labelledby="heading1" data-parent="#accordionGood" style="" aria-expanded="true">
+                    <div class="card-body">
+                      <div class="container">
+                        <pre class=" language-python">                          <code class=" language-python">
+<span class="token keyword">def</span> <span class="token function">apikey</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  apikey <span class="token operator">=</span> <span class="token string">"imjustgood"</span> <span class="token comment"># Your Apikey Here</span>
+  url <span class="token operator">=</span> <span class="token string">"https://api.imjustgood.com/status?apikey="</span><span class="token operator">+</span>apikey
+  data <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">.</span>text<span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+apikey<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                          </code>
+                        </pre>
+                      </div>
+                      <div class="container">
+                        <a href="https://github.com/goodop/api-imjustgood.com/blob/main/Example/apikey_status.py" class="btn btn-dark btn-sm " data-dismiss="modal">&nbsp;&nbsp;&nbsp;<i class="fa fa-github" aria-hidden="true"></i>&nbsp;&nbsp;Github&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="example/status.html" class="btn btn-info btn-sm " data-dismiss="modal">&nbsp;&nbsp;&nbsp;<i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;Get&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="#" class="btn btn-success btn-sm" data-toggle="collapse" data-target="#Good1">&nbsp;&nbsp;&nbsp;<i class="fa fa-play"></i>&nbsp;&nbsp;Run&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <div id="Good1" class="collapse hide">
+                          <pre class=" language-json">                            <code class=" language-json">
+<span class="token punctuation">{</span>
+  <span class="token property">"creator"</span><span class="token operator">:</span> <span class="token string">"ImJustGood"</span><span class="token punctuation">,</span> 
+  <span class="token property">"result"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"expired"</span><span class="token operator">:</span> <span class="token string">"01/01/2023"</span><span class="token punctuation">,</span> 
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"GOOD2"</span><span class="token punctuation">,</span> 
+    <span class="token property">"restart"</span><span class="token operator">:</span> <span class="token string">"22/01/2021"</span><span class="token punctuation">,</span> 
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"FREE"</span><span class="token punctuation">,</span> 
+    <span class="token property">"usage"</span><span class="token operator">:</span> <span class="token string">"2/100"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> 
+  <span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span>
+<span class="token punctuation">}</span>
+                            </code>
+                          </pre>
+                        </div>
+                      </div>
+                    </div>      
+                  </div>
+                  <!-- End Card Body -->
+
+                  <!-- Start Card Header -->
+                  <div class="card-header" role="tab" id="heading2">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionGood" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                      <h7 class="mb-0">
+                        2.
+                        <span style="padding-left: 10px; padding-right: 10px;">
+                          Youtube Search
+                        </span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </h7>
+                    </a>
+                  </div>
+                  <!-- End Card Header -->
+
+                  <!-- Start Card Body -->
+                  <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2" data-parent="#accordionGood" aria-expanded="false">
+                    <div class="card-body">
+                      <div class="container">
+                        <pre class=" language-python">                          <code class=" language-python">
+<span class="token keyword">def</span> <span class="token function">youtube</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  apikey <span class="token operator">=</span> <span class="token string">"imjustgood"</span> <span class="token comment"># Your Apikey Here</span>
+  query <span class="token operator">=</span> <span class="token string">"despacito"</span> <span class="token comment"># Example Query</span>
+  headers <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"apikey"</span><span class="token punctuation">:</span> apikey<span class="token punctuation">}</span>
+  url <span class="token operator">=</span> <span class="token string">"https://api.imjustgood.com/youtube="</span><span class="token operator">+</span>query
+  data <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">,</span>headers<span class="token operator">=</span>headers<span class="token punctuation">)</span><span class="token punctuation">.</span>text<span class="token punctuation">)</span>
+  <span class="token keyword">if</span> data<span class="token punctuation">[</span><span class="token string">"status"</span><span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token number">200</span><span class="token punctuation">:</span>
+     <span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">"message"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token keyword">else</span><span class="token punctuation">:</span>
+     <span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+youtube<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                          </code>
+                        </pre>
+                      </div>
+                      <div class="container">
+                        <a href="https://github.com/goodop/api-imjustgood.com/blob/main/Example/youtube.py" class="btn btn-dark btn-sm " data-dismiss="modal">&nbsp;&nbsp;&nbsp;<i class="fa fa-github" aria-hidden="true"></i>&nbsp;&nbsp;Github&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="example/youtube.html" class="btn btn-info btn-sm " data-dismiss="modal">&nbsp;&nbsp;&nbsp;<i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;Get&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="#" class="btn btn-success btn-sm" data-toggle="collapse" data-target="#Good2">&nbsp;&nbsp;&nbsp;<i class="fa fa-play"></i>&nbsp;&nbsp;Run&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <div id="Good2" class="collapse hide">
+                          <pre class=" language-json">                            <code class=" language-json">
+<span class="token punctuation">{</span>
+  <span class="token property">"creator"</span><span class="token operator">:</span> <span class="token string">"ImJustGood"</span><span class="token punctuation">,</span> 
+  <span class="token property">"result"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"audioUrl"</span><span class="token operator">:</span> <span class="token string">"https://r5---sn-a5m7lnlz.googlevideo.com/videoplayback/../="</span><span class="token punctuation">,</span> 
+    <span class="token property">"author"</span><span class="token operator">:</span> <span class="token string">"LuisFonsiVEVO"</span><span class="token punctuation">,</span> 
+    <span class="token property">"duration"</span><span class="token operator">:</span> <span class="token string">"00:04:42"</span><span class="token punctuation">,</span> 
+    <span class="token property">"pageUrl"</span><span class="token operator">:</span> <span class="token string">"https://youtu.be/kJQP7kiw5Fk"</span><span class="token punctuation">,</span> 
+    <span class="token property">"thumbnail"</span><span class="token operator">:</span> <span class="token string">"https://i.ytimg.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"</span><span class="token punctuation">,</span> 
+    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Luis Fonsi - Despacito ft. Daddy Yankee"</span><span class="token punctuation">,</span> 
+    <span class="token property">"videoUrl"</span><span class="token operator">:</span> <span class="token string">"https://r5---sn-a5m7lnlz.googlevideo.com/videoplayback/../="</span><span class="token punctuation">,</span> 
+    <span class="token property">"watched"</span><span class="token operator">:</span> <span class="token number">7146912968</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> 
+  <span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span>
+<span class="token punctuation">}</span>
+                            </code>
+                          </pre>
+                        </div>
+                      </div>
+                    </div>      
+                  </div>
+                  <!-- End Card Body -->
+
+                  <!-- Start Card Body -->
+                  <div id="collapse51" class="collapse" role="tabpanel" aria-labelledby="heading51" data-parent="#accordionGood" aria-expanded="false">
+                    <div class="card-body">
+                      <div class="container">
+                        <pre class=" language-python">                          <code class=" language-python">
+<span class="token keyword">def</span> <span class="token function">mangaChapter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  apikey <span class="token operator">=</span> <span class="token string">"imjustgood"</span> <span class="token comment"># Your Apikey Here</span>
+  chapter <span class="token operator">=</span> <span class="token string">"boruto-naruto-next-generations-chapter-001"</span> <span class="token comment"># Example Chapter Id</span>
+  headers <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"apikey"</span><span class="token punctuation">:</span> apikey<span class="token punctuation">}</span>
+  url <span class="token operator">=</span> <span class="token string">"https://api.imjustgood.com/manga/chapter="</span><span class="token operator">+</span>chapter
+  data <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">,</span>headers<span class="token operator">=</span>headers<span class="token punctuation">)</span><span class="token punctuation">.</span>text<span class="token punctuation">)</span>
+  <span class="token keyword">if</span> data<span class="token punctuation">[</span><span class="token string">"status"</span><span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token number">200</span><span class="token punctuation">:</span>
+     <span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">"message"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token keyword">else</span><span class="token punctuation">:</span>
+     <span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+mangaChapter<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                          </code>
+                        </pre>
+                      </div>
+                      <div class="container">
+                        <a href="https://github.com/goodop/api-imjustgood.com/blob/main/Example/manga_chapter.py" class="btn btn-dark btn-sm " data-dismiss="modal">&nbsp;&nbsp;&nbsp;<i class="fa fa-github" aria-hidden="true"></i>&nbsp;&nbsp;Github&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="example/manga-chapter.html" class="btn btn-info btn-sm " data-dismiss="modal">&nbsp;&nbsp;&nbsp;<i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;Get&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="#" class="btn btn-success btn-sm" data-toggle="collapse" data-target="#Good51">&nbsp;&nbsp;&nbsp;<i class="fa fa-play"></i>&nbsp;&nbsp;Run&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <div id="Good51" class="collapse hide">
+                          <pre class=" language-json">                            <code class=" language-json">
+<span class="token punctuation">{</span>
+  <span class="token property">"creator"</span><span class="token operator">:</span> <span class="token string">"ImJustGood"</span><span class="token punctuation">,</span> 
+  <span class="token property">"result"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"manga"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">"https://cdn.komikcast.com/wp-content/img/B/Boruto/001/001.jpg"</span><span class="token punctuation">,</span> 
+      <span class="token string">"https://cdn.komikcast.com/wp-content/img/B/Boruto/001/002.jpg"</span><span class="token punctuation">,</span> 
+      <span class="token string">"https://cdn.komikcast.com/wp-content/img/B/Boruto/001/003.jpg"</span><span class="token punctuation">,</span> 
+      <span class="token string">"https://cdn.komikcast.com/wp-content/img/B/Boruto/001/004.jpg"</span><span class="token punctuation">,</span> 
+      <span class="token string">"https://cdn.komikcast.com/wp-content/img/B/Boruto/001/005.jpg"</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span> 
+    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Boruto: Naruto Next Generations Chapter 001"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> 
+  <span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span>
+<span class="token punctuation">}</span>
+                            </code>
+                          </pre>
+                        </div>
+                      </div>
+                    </div>      
+                  </div>
+                  <!-- End Card Body -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End List Api -->
+
+    <!-- Start Free List Api -->
+    <section id="FREE" class="FREE">
+      <div class="container aos-init" data-aos="fade-up">
+        <h6 style="margin-bottom: 35px; font-weight: bold;">FREE USAGE&nbsp;&nbsp;(&nbsp;&nbsp;Without Apikey&nbsp;&nbsp;)</h6>
+        <div class="container">
+          <div class="row show-grid">
+            <div class="col-lg-12">
+              <div class="accordion md-accordion" id="accordionGood-FREE" role="tablist" aria-multiselectable="true">
+
+                  <!-- Start Card Header -->
+                  <div class="card-header" role="tab" id="heading-free1">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionGood-FREE" href="#collapse-free1" aria-expanded="false" aria-controls="collapse-free1">
+                      <h7 class="mb-0">
+                        1.
+                        <span style="padding-left: 10px; padding-right: 10px;">
+                          Calculator
+                        </span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </h7>
+                    </a>
+                  </div>
+                  <!-- End Card Header -->
+
+                  <!-- Start Card Body -->
+                  <div id="collapse-free1" class="collapse" role="tabpanel" aria-labelledby="heading-free1" data-parent="#accordionGood-FREE">
+                    <div class="card-body">
+                      <div class="container">
+                        <pre class=" language-python">                          <code class=" language-python">
+<span class="token keyword">def</span> <span class="token function">calculator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  calculated <span class="token operator">=</span> <span class="token string">"10+10x10:10-10"</span> <span class="token comment"># Example Multiplication</span>
+  url <span class="token operator">=</span> <span class="token string">"https://api.imjustgood.com/calc="</span><span class="token operator">+</span>calculated
+  data <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">.</span>text<span class="token punctuation">)</span>
+  <span class="token keyword">if</span> data<span class="token punctuation">[</span><span class="token string">"status"</span><span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token number">200</span><span class="token punctuation">:</span>
+     <span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">"message"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token keyword">else</span><span class="token punctuation">:</span>
+     <span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+calculator<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                          </code>
+                        </pre>
+                      </div>
+                      <div class="container">
+                        <a href="https://github.com/goodop/api-imjustgood.com/blob/main/Example/calc.py" class="btn btn-dark btn-sm " data-dismiss="modal">&nbsp;&nbsp;&nbsp;<i class="fa fa-github" aria-hidden="true"></i>&nbsp;&nbsp;Github&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="example/calc.html" class="btn btn-info btn-sm " data-dismiss="modal">&nbsp;&nbsp;&nbsp;<i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;Get&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="#" class="btn btn-success btn-sm" data-toggle="collapse" data-target="#Good-free1">&nbsp;&nbsp;&nbsp;<i class="fa fa-play"></i>&nbsp;&nbsp;Run&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <div id="Good-free1" class="collapse hide">
+                          <pre class=" language-json">                            <code class=" language-json">
+<span class="token punctuation">{</span>
+  <span class="token property">"creator"</span><span class="token operator">:</span> <span class="token string">"ImJustGood"</span><span class="token punctuation">,</span> 
+  <span class="token property">"result"</span><span class="token operator">:</span> <span class="token string">"hasil 10+10x10:10-10 adalah 10"</span><span class="token punctuation">,</span> 
+  <span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span>
+<span class="token punctuation">}</span>
+                            </code>
+                          </pre>
+                        </div>
+                      </div>
+                    </div>      
+                  </div>
+                  <!-- End Card Body -->
+
+                  <!-- Start Card Header -->
+                  <div class="card-header" role="tab" id="heading-free7">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionGood-FREE" href="#collapse-free7" aria-expanded="false" aria-controls="collapse-free7">
+                      <h7 class="mb-0">
+                        7.
+                        <span style="padding-left: 10px; padding-right: 10px;">
+                          Base64 Decode
+                        </span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </h7>
+                    </a>
+                  </div>
+                  <!-- End Card Header -->
+
+                  <!-- Start Card Body -->
+                  <div id="collapse-free7" class="collapse" role="tabpanel" aria-labelledby="heading-free7" data-parent="#accordionGood-FREE">
+                    <div class="card-body">
+                      <div class="container">
+                        <pre class=" language-python">                          <code class=" language-python">
+<span class="token keyword">def</span> <span class="token function">Base64Decode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  code <span class="token operator">=</span> <span class="token string">"VGhlQXV0b2JvdHNDb3Jw"</span> <span class="token comment"># Example Base64 Code</span>
+  url <span class="token operator">=</span> <span class="token string">"https://api.imjustgood.com/base64/code="</span><span class="token operator">+</span>code
+  data <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">.</span>text<span class="token punctuation">)</span>
+  <span class="token keyword">if</span> data<span class="token punctuation">[</span><span class="token string">"status"</span><span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token number">200</span><span class="token punctuation">:</span>
+     <span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">"message"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token keyword">else</span><span class="token punctuation">:</span>
+     <span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+Base64Decode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                          </code>
+                        </pre>
+                      </div>
+                      <div class="container">
+                        <a href="https://github.com/goodop/api-imjustgood.com/blob/main/Example/b64decode.py" class="btn btn-dark btn-sm " data-dismiss="modal">&nbsp;&nbsp;&nbsp;<i class="fa fa-github" aria-hidden="true"></i>&nbsp;&nbsp;Github&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="example/base64-decode.html" class="btn btn-info btn-sm " data-dismiss="modal">&nbsp;&nbsp;&nbsp;<i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;Get&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="#" class="btn btn-success btn-sm" data-toggle="collapse" data-target="#Good-free7">&nbsp;&nbsp;&nbsp;<i class="fa fa-play"></i>&nbsp;&nbsp;Run&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <div id="Good-free7" class="collapse hide">
+                          <pre class=" language-json">                            <code class=" language-json">
+<span class="token punctuation">{</span>
+  <span class="token property">"creator"</span><span class="token operator">:</span> <span class="token string">"ImJustGood"</span><span class="token punctuation">,</span> 
+  <span class="token property">"result"</span><span class="token operator">:</span> <span class="token string">"TheAutobotsCorp"</span><span class="token punctuation">,</span> 
+  <span class="token property">"status"</span><span class="token operator">:</span> <span class="token number">200</span>
+<span class="token punctuation">}</span>
+                            </code>
+                          </pre>
+                        </div>
+                      </div>
+                    </div>      
+                  </div>
+                  <!-- End Card Body -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Free List Api -->
+
+    <!-- Start Facts Section -->
+    <section id="facts" class="facts">
+      <div class="container aos-init" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Hits &amp; Count</h2>
+          <p>for each request according to the subscription package, for details as below:</p>
+        </div>
+        <div class="row counters">
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">100</span>
+            <p><strong>Hit Per Days</strong><br>Public access</p>
+          </div>
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">3000</span>
+            <p><strong>Hit Per Days</strong><br>Premium access</p>
+          </div>
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">56</span>
+            <p><strong>Active Medias</strong><br>Always update.</p>
+          </div>
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">2</span>
+            <p><strong>Maintenance Medias</strong><br>Will be fixed soon</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Facts Section -->
+  </main>
+  <!-- End Main -->
+
+  <!-- Start Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        Copyright © <strong><span>Im Just Good </span></strong>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://ang.imjustgood.com/">I'm Just Good</a>
+      </div>
     </div>
-    <script type="text/javascript">
-        const countDate = new Date('dec 31, 2020 23:59:59').getTime();
-        function newYear() {
-            const now = new Date().getTime();
-            gap = countDate - now;
+  </footer>
+  <!-- End  Footer -->
 
-            const second = 1000;
-            const minute = second * 60;
-            const hour = minute * 60;
-            const day = hour * 24;
+  <!-- Top Page -->
+  <a href="#" class="back-to-top" style="display: none;"><i class="bx bx-up-arrow-alt"></i></a>
 
-            const d = Math.floor(gap / (day));
-            const h = Math.floor((gap % (day)) / (hour));
-            const m = Math.floor((gap % (hour)) / (minute));
-            const s = Math.floor((gap % (minute)) / (second));
+  <!-- Vendor JS Files -->
+  <script src="https://api.imjustgood.com/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="https://api.imjustgood.com/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://api.imjustgood.com/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="https://api.imjustgood.com/assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://api.imjustgood.com/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="https://api.imjustgood.com/assets/vendor/counterup/counterup.min.js"></script>
+  <script src="https://api.imjustgood.com/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="https://api.imjustgood.com/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://api.imjustgood.com/assets/vendor/venobox/venobox.min.js"></script>
+  <script src="https://api.imjustgood.com/assets/vendor/aos/aos.js"></script>
+  <!-- Template Main JS File -->
+  <script src="https://api.imjustgood.com/assets/js/main.js"></script>
+  <script src="https://api.imjustgood.com/assets/js/prism.js"></script> 
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5fe1e9426676b000125fc781&amp;product=sop" async="async"></script>
+  <script>
+    $(function() {
+      AOS.init();
+    });
 
-            document.getElementById('day').innerText = d;
-            document.getElementById('hour').innerText = h;
-            document.getElementById('minute').innerText = m;
-            document.getElementById('second').innerText = s;
-        }
-
-        setInterval(function() {
-            newYear()
-        })
-    </script>
-</body>
-</html>
+    $(window).on('load', function() {
+      AOS.refresh();
+    });
+  </script>
+<iframe src="https://c.sharethis.mgr.consensu.org/portal-v2.html" id="st_gdpr_iframe" title="GDPR Consent Management" style="width: 0px; height: 0px; position: absolute; left: -5000px;"></iframe><div id="st-2" class=" st-sticky-share-buttons st-right st-toggleable st-has-labels st-show-total "><div class="st-total ">
+  <span class="st-label">12</span>
+  <span class="st-shares">
+    Shares
+  </span>
+</div><div class="st-btn st-first" data-network="sharethis" style="display: inline-block;">
+  <img alt="sharethis sharing button" src="https://platform-cdn.sharethis.com/img/sharethis.svg">
+  <span class="st-label">Share</span>
+</div><div class="st-btn" data-network="whatsapp" style="display: inline-block;">
+  <img alt="whatsapp sharing button" src="https://platform-cdn.sharethis.com/img/whatsapp.svg">
+  <span class="st-label">Share</span>
+</div><div class="st-btn" data-network="line" style="display: inline-block;">
+  <img alt="line sharing button" src="https://platform-cdn.sharethis.com/img/line.svg">
+  <span class="st-label">Share</span>
+</div><div class="st-btn" data-network="twitter" style="display: inline-block;">
+  <img alt="twitter sharing button" src="https://platform-cdn.sharethis.com/img/twitter.svg">
+  <span class="st-label">Tweet</span>
+</div><div class="st-btn st-last" data-network="facebook" style="display: inline-block;">
+  <img alt="facebook sharing button" src="https://platform-cdn.sharethis.com/img/facebook.svg">
+  <span class="st-label">Share</span>
+</div><div class="st-toggle">
+  <div class="st-left">
+    <img alt="arrow_left sharing button" src="https://platform-cdn.sharethis.com/img/arrow_left.svg">
+  </div>
+  <div class="st-right">
+    <img alt="arrow_right sharing button" src="https://platform-cdn.sharethis.com/img/arrow_right.svg">
+  </div>
+</div></div></body></html>
